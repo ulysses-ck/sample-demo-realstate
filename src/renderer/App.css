@@ -1,0 +1,39 @@
+label > input[type='radio']:checked ~ i {
+  color: #cab482;
+}
+.props {
+  color: red;
+}
+.select {
+  position: relative;
+}
+
+.select select {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline;
+  padding: 7px 40px 7px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+.select select:required:invalid {
+  color: #5a667f;
+}
+.select select option {
+  color: #223254;
+  width: auto;
+}
+.select select option[value=''][disabled] {
+  display: none;
+}
+.select select:focus {
+  outline: none;
+  border-color: #1e40af;
+}
+
+#select-arrow-down {
+  position: absolute;
+  top: 4px;
+  left: 7.2rem;
+  z-index: 10;
+}
